@@ -51,7 +51,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>INF653 &mdash; US States REST API</h1>
+        <h1>INF653 - US States REST API</h1>
         <p>A Node.js + Express + MongoDB API serving data for all 50 US states, with user-contributed fun facts stored in MongoDB.</p>
 
         <h2>API Root</h2>
@@ -59,11 +59,11 @@
 
         <h2>GET Endpoints</h2>
         <ul>
-            <li><span class="verb get">GET</span> <code>/states/</code> &mdash; all state data</li>
-            <li><span class="verb get">GET</span> <code>/states/?contig=true</code> &mdash; contiguous states only (no AK, HI)</li>
-            <li><span class="verb get">GET</span> <code>/states/?contig=false</code> &mdash; non-contiguous (AK, HI)</li>
-            <li><span class="verb get">GET</span> <code>/states/:state</code> &mdash; full data for one state</li>
-            <li><span class="verb get">GET</span> <code>/states/:state/funfact</code> &mdash; a random fun fact</li>
+            <li><span class="verb get">GET</span> <code>/states/</code> - all state data</li>
+            <li><span class="verb get">GET</span> <code>/states/?contig=true</code> - contiguous states only (no AK, HI)</li>
+            <li><span class="verb get">GET</span> <code>/states/?contig=false</code> - non-contiguous (AK, HI)</li>
+            <li><span class="verb get">GET</span> <code>/states/:state</code> - full data for one state</li>
+            <li><span class="verb get">GET</span> <code>/states/:state/funfact</code> - a random fun fact</li>
             <li><span class="verb get">GET</span> <code>/states/:state/capital</code></li>
             <li><span class="verb get">GET</span> <code>/states/:state/nickname</code></li>
             <li><span class="verb get">GET</span> <code>/states/:state/population</code></li>
@@ -72,14 +72,14 @@
 
         <h2>POST / PATCH / DELETE</h2>
         <ul>
-            <li><span class="verb post">POST</span> <code>/states/:state/funfact</code> &mdash; body: <code>{ "funfacts": ["..."] }</code></li>
-            <li><span class="verb patch">PATCH</span> <code>/states/:state/funfact</code> &mdash; body: <code>{ "index": 1, "funfact": "..." }</code></li>
-            <li><span class="verb delete">DELETE</span> <code>/states/:state/funfact</code> &mdash; body: <code>{ "index": 1 }</code></li>
+            <li><span class="verb post">POST</span> <code>/states/:state/funfact</code> - body: <code>{ "funfacts": ["..."] }</code></li>
+            <li><span class="verb patch">PATCH</span> <code>/states/:state/funfact</code> - body: <code>{ "index": 1, "funfact": "..." }</code></li>
+            <li><span class="verb delete">DELETE</span> <code>/states/:state/funfact</code> - body: <code>{ "index": 1 }</code></li>
         </ul>
 
         <p><strong>Note:</strong> the <code>:state</code> URL parameter accepts state codes (KS, NE, TX, NY, etc.) in any case. Indexes on PATCH/DELETE are <strong>1-based</strong>.</p>
 
-        <footer>INF653 Back End Web Development &mdash; Final Project</footer>
+        <footer>INF653 Back End Web Development - Final Project</footer>
     </div>
 </body>
 </html>
